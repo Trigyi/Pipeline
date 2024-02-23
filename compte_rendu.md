@@ -34,7 +34,7 @@
     ```bash
     cat ~/.ssh/id_rsa.pub | clip
     ```
-    Ensuite dans github on accède à "Settings" > "SSH and GPG keys" > "New SSH key" et on coole notre clé dans l'espace approprié.
+    Ensuite dans GitHub on accède à "Settings" > "SSH and GPG keys" > "New SSH key" et on coole notre clé dans l'espace approprié.
 
 3. Test de la connexion SSH
 
@@ -47,6 +47,20 @@
     Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
     Hi Trigyi! You've successfully authenticated, but GitHub does not provide shell access.
     ```
+
+## 2. Tester un premier workflow Github
+1. Créer le répertoire .github/workflows
+    ```bash
+    laura@Laura_laptop MINGW64 ~/Documents/GitHub/Pipeline (main)
+    $ mkdir -p .github/workflows
+    ```
+2. Créer le fichier yml
+    ```bash
+    laura@Laura_laptop MINGW64 ~/Documents/GitHub/Pipeline/.github/workflows (main)
+    $ touch github-actions-demo.yml
+    ```
+3. Le commit sur le nouvel branche et le push sont visibles dans le repos GitHub, voici cependant le résultat final du tutoriel avec l'exécution du workflow.
+    ![GitHub Logo](GitHub.png)
 
     
     
